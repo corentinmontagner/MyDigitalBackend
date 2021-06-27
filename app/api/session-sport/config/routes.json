@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/session-sports",
+      "handler": "session-sport.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/session-sports/count",
+      "handler": "session-sport.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/session-sports/:id",
+      "handler": "session-sport.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/session-sports",
+      "handler": "session-sport.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/session-sports/:id",
+      "handler": "session-sport.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/session-sports/:id",
+      "handler": "session-sport.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

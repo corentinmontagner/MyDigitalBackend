@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "session_sports",
+  "info": {
+    "name": "Session_Sport",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sport": {
+      "type": "string"
+    },
+    "commentaire": {
+      "type": "richtext"
+    },
+    "dateDebut": {
+      "type": "datetime"
+    },
+    "dateFin": {
+      "type": "datetime"
+    },
+    "users_createur": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "session_sports"
+    },
+    "users_membres": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "session_sports",
+      "dominant": true
+    }
+  }
+}
